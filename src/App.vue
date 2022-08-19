@@ -1,13 +1,16 @@
 <template>
   <div id="app">app</div>
+  <main-wrapper/>
 </template>
 
 <script>
 
+import mainWrapper from "@/components/main-wrapper";
+
 export default {
     name: "App",
     components: {
-
+        mainWrapper
     }
 };
 </script>
