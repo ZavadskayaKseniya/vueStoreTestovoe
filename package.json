@@ -10,6 +10,8 @@
   "dependencies": {
     "-": "^0.0.1",
     "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "bootstrap-vue": "^2.22.0",
     "core-js": "^3.8.3",
     "eslint-config-airbnb-base": "^15.0.0",
     "git-flow": "^0.2.0",

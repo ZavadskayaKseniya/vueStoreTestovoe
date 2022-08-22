@@ -1,14 +1,19 @@
 <template>
   <div class="main-wrapper">
-    <p>hyli</p>
+    <p>{{title}}}</p>
+    <FormWrapper/>
+    <VCatalog/>
   </div>>
 </template>
 
 
 <script>
+import FormWrapper from "@/components/form-wrapper";
+import VCatalog from "@/components/v-catalog";
+
 export default {
     name: "main-wrapper",
-    components:{},
+    components:{VCatalog, FormWrapper},
     data() {
         return{
             title: "Main wrapper"
