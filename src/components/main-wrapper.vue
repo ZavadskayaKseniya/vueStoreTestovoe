@@ -1,9 +1,9 @@
 <template>
   <div class="main-wrapper">
-    <p>{{title}}}</p>
+
     <FormWrapper/>
     <VCatalog/>
-  </div>>
+  </div>
 </template>
 
 
@@ -13,7 +13,7 @@ import VCatalog from "@/components/v-catalog";
 
 export default {
     name: "main-wrapper",
-    components:{VCatalog, FormWrapper},
+    components:{FormWrapper,VCatalog},
     data() {
         return{
             title: "Main wrapper"
@@ -28,11 +28,11 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
  .main-wrapper {
-   display: grid;
-   align-items: center;
-   max-width: 900px;
+   display: flex;
+   justify-content: space-between;
+   max-width: 1201px;
    margin: 0 auto;
  }
 
