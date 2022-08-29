@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss">
 .v-catalog {
-  background-color: rgba(255, 0, 0, 0.09);
+
   width: 1028px;
   display:flex;
   flex-wrap: wrap;

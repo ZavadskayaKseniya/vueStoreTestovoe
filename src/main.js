@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import {Vuelidate} from "vuelidate";
 import Vue from "vue";
+require("@/assets/styles/styles.scss");
 
 
 

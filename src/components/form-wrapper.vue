@@ -14,7 +14,7 @@
         <label for="price">Цена товара</label>
         <input type="number" class="input input-price" id="price" value="42">
       </div>
-      <button class="btn btn-secondary btn-submit" type="submit">Submit</button>
+      <button class="btn-submit" type="submit">Submit</button>
 
     </form>
   </div>
@@ -39,6 +39,7 @@ export default {
    height: 440px;
    display: flex;
    justify-content: start;
+   align-items: center;
    margin-top:$margin;
 
    background: $form-backgraund;
@@ -47,22 +48,62 @@ export default {
 
 
  }
+ .form-group{
+   float: left;
+ }
+ label {
+   font-size:0.625rem;
+   display: block;
+   float: left;
+   margin-left: 8%;
+   margin-bottom: 0.25rem;
+
+ }
  .form-js{
    margin-top: $margin;
  }
  .input {
-   width: 100%;
-   height: 30px;
+   width: 84%;
+   height: 2.25rem;;
    padding: 0 10px;
-   border: 1px solid #ccc;
    outline: 0;
-   margin-bottom: $margin;
+   margin: 0px $margin $margin;
+   background: #FFFEFB;
+   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+   border-radius: 4px;
+   border: solid #FFFEFB;
  }
+ .input.input-description {
+   height: 6.75rem;
+ }
+
  .input.error {
    border-color: $error-color;
  }
  .input::placeholder{
-   color:#ccc;
+   color: #B4B4B4;
+   font-size: 12px;
+ }
+ .input.input-description::placeholder{
+
+   margin-top: 0px;
+   position: absolute;
+   display: block;
+
+ }
+ .btn-submit{
+   font-family: 'Inter', sans-seriff;
+   background: #EEEEEE;
+   border-radius: 10px;
+   width: 84%;
+   height: 2.25rem;
+   border: solid #FFFEFB;
+   padding: 0;
+   font-size: 12px;
+   font-weight: 600;
+   color: #B4B4B4;
+
+
  }
 
 </style>
