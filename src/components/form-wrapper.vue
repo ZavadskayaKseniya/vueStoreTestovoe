@@ -68,10 +68,10 @@ export default {
    padding: 0 10px;
    outline: 0;
    margin: 0px $margin $margin;
-   background: #FFFEFB;
+   background: $form-backgraund;
    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
    border-radius: 4px;
-   border: solid #FFFEFB;
+   border: solid $form-backgraund;
  }
  .input.input-description {
    height: 6.75rem;
@@ -97,7 +97,7 @@ export default {
    border-radius: 10px;
    width: 84%;
    height: 2.25rem;
-   border: solid #FFFEFB;
+   border: solid $form-backgraund;
    padding: 0;
    font-size: 12px;
    font-weight: 600;

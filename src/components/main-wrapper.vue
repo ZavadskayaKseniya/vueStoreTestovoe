@@ -33,7 +33,9 @@ export default {
    display: flex;
    justify-content: space-between;
    max-width: 1201px;
+   min-height: 1000px;
    margin: 0 auto;
+
  }
 
 </style>

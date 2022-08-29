@@ -1,10 +1,10 @@
 <template>
   <div class="product-item">
-    <img src="https://catfishes.ru/wp-content/uploads/2021/05/iguana1.jpg">
+    <img :src="product_data.image">
     <div class="product-list">
-      <p class="product-name">Наименование товара</p>
-      <p class="product-description">Какое-то описанрние товра лорывщшнрфщфыв шдгыфнг ыфвропа лг гныфв гны шнфы щ.</p>
-      <span class="price">10000 ₽</span>
+      <p class="product-name">{{product_data.name}}</p>
+      <p class="product-description">{{product_data.description}}</p>
+      <span class="price">{{product_data.price}} руб.</span>
       <button class="btn-add">+</button>
     </div>
   </div>
@@ -12,7 +12,16 @@
 
 <script>
 export default {
-    name: "card-item"
+    name: "card-item",
+    props: {
+        product_data: {
+            type: Object,
+            default() {
+                return {};
+            }
+        }
+    }
+
 };
 </script>
 
@@ -20,6 +29,7 @@ export default {
 
 .product-item {
   width: 30%;
+  height: 20%;
   text-align: left;
   margin: $margin 0px 0px $margin;
   background: #FFFEFB;
@@ -30,6 +40,9 @@ export default {
 .product-item img {
   display: block;
   width: 100%;
+  height: 180px;
+
+
 }
 .product-list {
   background: #fafafa;
@@ -39,17 +52,20 @@ export default {
 .product-name {
   font-weight: 600;
   font-size: 20px;
-  color:#3F3F3F
+  color:#3F3F3F;
+  //height: 48px;
+
 }
 .product-description {
   font-weight: 400;
   font-size: 16px;
   color:#3F3F3F;
+  height: 48px;
 }
 .price {
   font-weight: 600;
   font-size: 24px;
-  float: left;
+
 }
 .btn-add {
   float: right;

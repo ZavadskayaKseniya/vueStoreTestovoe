@@ -1,9 +1,46 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+//  "products": [
+//    {
+//      "image": "1.jpg",
+//      "name": "Telefon",
+//      "price":  1300,
+//      "description": "liucusgd;cougas  sau 'apsd 9u sdadpASUI[ sas ik",
+//      "available": true
+//    },
+//    {
+//      "image": "1.jpg",
+//      "name": "Megafon",
+//      "price":  5002,
+//      "description": "jilaf i;aodfis yu';a p9we87r 'wJ/PSDJFA{",
+//      "available": true
+//    },
+//    {
+//      "image": "1.jpg",
+//      "name": "rJHGVKJGC",
+//      "price":  7040,
+//      "description": "DSLVJ S'DOPIUS  907U PDSA UPOU  sdadpASUI[ sas ik",
+//      "available": true
+//    },
+//    {
+//      "image": "1.jpg",
+//      "name": "LIUY SF",
+//      "price":  2833,
+//      "description": "liucusgd;cougas  sau 'apsd 9u sdadpASUI[ sas ik",
+//      "available": true
+//    },
+//    {
+//      "image": "1.jpg",
+//      "name": ";sopdU F'",
+//      "price":  300324,
+//      "description": "liDFGSAR TSRI[ sas ik",
+//      "available": true
+//    },
+//    {
+//      "image": "1.jpg",
+//      "name": "aWOD ",
+//      "price":  55521,
+//      "description": "lFDGDS SDF;IUAPUA  9QW8E9999  sau 'apsd 9u sdadpASUI[ sas ik",
+//      "available": true
+//    }
+//  ]
 }
