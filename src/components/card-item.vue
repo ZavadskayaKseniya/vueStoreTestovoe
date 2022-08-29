@@ -2,9 +2,10 @@
   <div class="product-item">
     <img src="https://catfishes.ru/wp-content/uploads/2021/05/iguana1.jpg">
     <div class="product-list">
-      <h3>Игуана</h3>
-      <span class="price">₽ 1999</span>
-      <button class="btn btn-secondary">Купить</button>
+      <p class="product-name">Наименование товара</p>
+      <p class="product-description">Какое-то описанрние товра лорывщшнрфщфыв шдгыфнг ыфвропа лг гныфв гны шнфы щ.</p>
+      <span class="price">10000 ₽</span>
+      <button class="btn-add">+</button>
     </div>
   </div>
 </template>
@@ -19,12 +20,11 @@ export default {
 
 .product-item {
   width: 30%;
-  height: 310px;
-  text-align: center;
+  text-align: left;
   margin: $margin 0px 0px $margin;
-  border-bottom: 2px solid #F5F5F5;
-  background: rgba(255, 255, 255, 0.98);
-  transition: .3s ease-in;
+  background: #FFFEFB;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
 }
 
 .product-item img {
@@ -33,20 +33,28 @@ export default {
 }
 .product-list {
   background: #fafafa;
-  padding: 15px 0;
+  padding: 16px 16px 24px 16px;
+
 }
-.product-list h3 {
-  font-size: 15px;
+.product-name {
+  font-weight: 600;
+  font-size: 20px;
+  color:#3F3F3F
+}
+.product-description {
   font-weight: 400;
-  color: #444444;
-  margin: 0 0 10px 0;
+  font-size: 16px;
+  color:#3F3F3F;
 }
 .price {
-  font-size: 13px;
-  color: #fc5a5a;
-  display: block;
-  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 24px;
+  float: left;
 }
+.btn-add {
+  float: right;
+}
+
 
 
 </style>
