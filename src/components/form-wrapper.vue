@@ -1,6 +1,22 @@
 <template>
-  <div class="form-wrapper">
-  <p class="text-dark">{{title}}</p>
+  <div class="form-wrapper" >
+    <form action="#" class="form-js" novalidate>
+      <div class="form-group">
+        <label for="product">Название товара</label>
+        <input type="text" class="input input-label" placeholder="Название продукта" id="product"/>
+
+        <label for="description">Описание товара</label>
+        <input type="text" class="input input-description" placeholder="Описание продукта" id="description"/>
+
+        <label for="myURL">Адресс картинки</label>
+        <input type="url" class="input input-url" id="myURL" name="myURL"  placeholder="http://www.example.com">
+
+        <label for="price">Цена товара</label>
+        <input type="number" class="input input-price" id="price" value="42">
+      </div>
+      <button class="btn btn-secondary btn-submit" type="submit">Submit</button>
+
+    </form>
   </div>
 
 </template>
@@ -19,12 +35,34 @@ export default {
 
 <style lang="scss">
  .form-wrapper {
-   margin-top:16px;
-   background: #FFFEFB;
-   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
-   border-radius: 4px;
    width: 332px;
    height: 440px;
+   display: flex;
+   justify-content: start;
+   margin-top:$margin;
+
+   background: $form-backgraund;
+   box-shadow: $form-shadow;
+   border-radius: 4px;
+
 
  }
+ .form-js{
+   margin-top: $margin;
+ }
+ .input {
+   width: 100%;
+   height: 30px;
+   padding: 0 10px;
+   border: 1px solid #ccc;
+   outline: 0;
+   margin-bottom: $margin;
+ }
+ .input.error {
+   border-color: $error-color;
+ }
+ .input::placeholder{
+   color:#ccc;
+ }
+
 </style>
