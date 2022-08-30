@@ -5,7 +5,9 @@
       <p class="product-name">{{product_data.name}}</p>
       <p class="product-description">{{product_data.description}}</p>
       <span class="price">{{product_data.price}} руб.</span>
-      <button class="btn-add">+</button>
+      <button class="btn-add"
+              @click="sendDataToP"
+      >+</button>
     </div>
   </div>
 </template>
@@ -19,6 +21,15 @@ export default {
             default() {
                 return {};
             }
+        }
+    },
+    data() {
+        return{};
+    },
+    computed: {},
+    methods:{
+        sendDataToP() {
+            this.$emit("sendArticle", this.product_data.id);
         }
     }
 

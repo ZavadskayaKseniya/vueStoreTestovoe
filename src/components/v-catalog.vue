@@ -3,9 +3,10 @@
 <div class="v-catalog">
 
   <CardItem
-    v-for="product in products"
+    v-for="product in this.$store.state.products"
     :key="product.id"
     v-bind:product_data="product"
+    @sendArticle="showChildIdInConsole"
   />
 
 
@@ -14,89 +15,27 @@
 
 <script>
 import { uuid } from "vue-uuid";
+import {mapActions, mapGetters} from "vuex";
 import CardItem from "@/components/card-item";
 export default {
     name: "v-catalog",
     components:{CardItem},
     data() {
-        return{
-            products: [
-                {
-                    id: Math.random()*100,
-                    image: "https://st.bork.ru/components/product/kitchen/kitchen-unit/kitchen-unit.jpg?t=1649849816",
-                    name: "Telefon 1",
-                    price:  3434,
-                    description: "liucusgd;couSHFDZGBVEDZSGBEASR  HSRT TSUI[ sas ik",
-                    available: true
-                },
-                {
-                    id: Math.random()*100,
-                    image: "https://vitek.ru/netcat_files/1402/1779/2430.jpg",
-                    name: "Telefon 2",
-                    price:  487,
-                    description: "lGFHFHBNsdadpASUI[ sas ik",
-                    available: true
-                },
-                {
-                    id: Math.random()*100,
-                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxxA-OSukjjvuqNSa-ZgJ0DsXZWYZTt_zplA&usqp=CAU",
-                    name: "Telefon 3",
-                    price:  950846,
-                    description: "liucusgd;cougas  SG STRY TRTdadpASUI[ sas ik",
-                    available: true
-                },
-                {
-                    id: Math.random()*100,
-                    image: "https://interiorbusiness.ru/wp-content/uploads/2020/08/best-kitchen-appliance-brands-10.jpg",
-                    name: "Telefon 4",
-                    price:  1443300,
-                    description: "liucusgdRE SG  TTTTTTTTTTTT I[ sas ik",
-                    available: true
-                },
-                {
-                    id: Math.random()*100,
-                    image: "https://st49.stblizko.ru/images/icons/rubrics/menus/002/120/387_medium.jpg?1571381494",
-                    name: "Telefon 5",
-                    price:  23432,
-                    description: "lERT     ;couRETu sdadpASUI[ sas ik",
-                    available: true
-                },
-                {
-                    id: Math.random()*100,
-                    image: "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
-                    name: "Telefon 6",
-                    price:  2343,
-                    description: "liucusgd;coRETEWERT sdadpASUI[ sas ik",
-                    available: true
-                },
-                {
-                    id: Math.random()*100,
-                    image: "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
-                    name: "Telefon 7",
-                    price:  2343,
-                    description: "liucusgd;coRETEWERT sdadpASUI[ sas ik",
-                    available: true
-                },
-                {
-                    id: Math.random()*100,
-                    image: "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
-                    name: "Telefon 8",
-                    price:  2343,
-                    description: "liucusgd;coRETEWERT sdadpASUI[ sas ik",
-                    available: true
-                },
-                {
-                    id: Math.random()*100,
-                    image: "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
-                    name: "Telefon 9",
-                    price:  2343,
-                    description: "liucusgd;coRETEWERT sdadpASUI[ sas ik",
-                    available: true
-                },
-
-            ]
-        };
+        return {};
     },
+
+    methods: {
+        ...mapActions([
+            "GET_PRODUCTS_FROM_API"
+        ]),
+        showChildIdInConsole(data) {
+            console.log(data);
+        }
+    },
+  mounted() {
+      this.GET_PRODUCTS_FROM_API();
+  }
+
 };
 </script>
 

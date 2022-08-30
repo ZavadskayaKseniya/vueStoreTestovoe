@@ -1,46 +1,76 @@
 {
-//  "products": [
-//    {
-//      "image": "1.jpg",
-//      "name": "Telefon",
-//      "price":  1300,
-//      "description": "liucusgd;cougas  sau 'apsd 9u sdadpASUI[ sas ik",
-//      "available": true
-//    },
-//    {
-//      "image": "1.jpg",
-//      "name": "Megafon",
-//      "price":  5002,
-//      "description": "jilaf i;aodfis yu';a p9we87r 'wJ/PSDJFA{",
-//      "available": true
-//    },
-//    {
-//      "image": "1.jpg",
-//      "name": "rJHGVKJGC",
-//      "price":  7040,
-//      "description": "DSLVJ S'DOPIUS  907U PDSA UPOU  sdadpASUI[ sas ik",
-//      "available": true
-//    },
-//    {
-//      "image": "1.jpg",
-//      "name": "LIUY SF",
-//      "price":  2833,
-//      "description": "liucusgd;cougas  sau 'apsd 9u sdadpASUI[ sas ik",
-//      "available": true
-//    },
-//    {
-//      "image": "1.jpg",
-//      "name": ";sopdU F'",
-//      "price":  300324,
-//      "description": "liDFGSAR TSRI[ sas ik",
-//      "available": true
-//    },
-//    {
-//      "image": "1.jpg",
-//      "name": "aWOD ",
-//      "price":  55521,
-//      "description": "lFDGDS SDF;IUAPUA  9QW8E9999  sau 'apsd 9u sdadpASUI[ sas ik",
-//      "available": true
-//    }
-//  ]
+  "products": [
+    {
+      "id": "Math.random()*100",
+      "image": "https://st.bork.ru/components/product/kitchen/kitchen-unit/kitchen-unit.jpg?t=1649849816",
+      "name": "Telefon 1",
+      "price":  3434,
+      "description": "liucusgd;couSHFDZGBVEDZSGBEASR  HSRT TSUI[ sas ik",
+      "available": true
+    },
+    {
+      "id": "Math.random()*100",
+      "image": "https://vitek.ru/netcat_files/1402/1779/2430.jpg",
+      "name": "Telefon 2",
+      "price":  487,
+      "description": "lGFHFHBNsdadpASUI[ sas ik",
+      "available": true
+    },
+    {
+      "id": "Math.random()*100",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxxA-OSukjjvuqNSa-ZgJ0DsXZWYZTt_zplA&usqp=CAU",
+      "name": "Telefon 3",
+      "price":  950846,
+      "description": "liucusgd;cougas  SG STRY TRTdadpASUI[ sas ik",
+      "available": true
+    },
+    {
+      "id": "Math.random()*100",
+      "image": "https://interiorbusiness.ru/wp-content/uploads/2020/08/best-kitchen-appliance-brands-10.jpg",
+      "name": "Telefon 4",
+      "price":  1443300,
+      "description": "liucusgdRE SG  TTTTTTTTTTTT I[ sas ik",
+      "available": true
+    },
+    {
+      "id": "Math.random()*100",
+      "image": "https://st49.stblizko.ru/images/icons/rubrics/menus/002/120/387_medium.jpg?1571381494",
+      "name": "Telefon 5",
+      "price":  23432,
+      "description": "lERT     ;couRETu sdadpASUI[ sas ik",
+      "available": true
+    },
+    {
+      "id": "Math.random()*100",
+      "image": "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
+      "name": "Telefon 6",
+      "price":  2343,
+      "description": "liucusgd;coRETEWERT sdadpASUI[ sas ik",
+      "available": true
+    },
+    {
+      "id": "Math.random()*100",
+      "image": "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
+      "name": "Telefon 7",
+      "price":  2343,
+      "description": "liucusgd;coRETEWERT sdadpASUI[ sas ik",
+      "available": true
+    },
+    {
+      "id": "Math.random()*100",
+      "image": "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
+      "name": "Telefon 8",
+      "price":  2343,
+      "description": "liucusgd;coRETEWERT sdadpASUI[ sas ik",
+      "available": true
+    },
+    {
+      "id": "Math.random()*100",
+      "image": "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
+      "name": "Telefon 9",
+      "price":  2343,
+      "description": "liucusgd;coRETEWERT sdadpASUI[ sas ik",
+      "available": true
+    }
+  ]
 }
