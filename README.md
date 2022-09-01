@@ -1,5 +1,5 @@
 # hello-world
-
+npx json-server --watch db.json  (to start watching json server with data)
 ## Project setup
 ```
 npm install
