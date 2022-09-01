@@ -4,29 +4,31 @@
         "es2021": true,
         "commonjs": true,
         "es6": true,
-        "node": true,
-        "jest/globals": true
+        "node": true
+
     },
     "extends": [
-        "airbnb",
-        "airbnb/hooks",
         "eslint:recommended",
         "plugin:vue/vue3-essential",
         "plugin:@typescript-eslint/recommended"
     ],
     "overrides": [
     ],
-    "parser": "@typescript-eslint/parser",
+    "parser": "vue-eslint-parser",
     "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true
+        }
     },
     "plugins": [
         "vue",
         "@typescript-eslint"
     ],
     "rules": {
-        "import/no-unresolved": "error",
+        "no-console": "off",
+        "import/no-unresolved": "off",
         "template-curly-spacing": "off",
         "arrow-body-style": "off",
         "no-unused-vars": "off",
