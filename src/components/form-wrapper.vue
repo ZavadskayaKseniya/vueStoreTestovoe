@@ -87,7 +87,7 @@ export default {
  .input.input-description::placeholder{
 
    margin-top: 0px;
-   position: absolute;
+   //position: absolute;
    z-index: 1;
    //display: block;
 
