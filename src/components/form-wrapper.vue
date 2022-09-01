@@ -88,7 +88,8 @@ export default {
 
    margin-top: 0px;
    position: absolute;
-   display: block;
+   z-index: 1;
+   //display: block;
 
  }
  .btn-submit{

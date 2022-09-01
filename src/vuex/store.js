@@ -15,7 +15,13 @@ let store = new Vuex.Store( {
         },
         SET_TO_CART: (state, product) => {
             state.cart.push(product);
+        },
+        REMOVE_FROM_CART: (state, id)=> {
+            return state.cart.filter((item) => {
+                return item.id===id;
+            });
         }
+
     },
     actions:{
         GET_PRODUCTS_FROM_API({commit}) {
@@ -35,7 +41,11 @@ let store = new Vuex.Store( {
         },
         ADD_TO_CART({commit}, product) {
             commit("SET_TO_CART", product);
+        },
+        DELETE_FROM_CART({commit}, id) {
+            commit("REMOVE_FROM_CART",id);
         }
+
     },
     getters:{
         PRODUCTS(state) {
@@ -43,7 +53,9 @@ let store = new Vuex.Store( {
         },
         CART(state) {
             return state.cart;
-        }
+        },
+
+
     }
 });
 

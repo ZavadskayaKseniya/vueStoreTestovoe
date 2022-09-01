@@ -1,14 +1,28 @@
 <template>
   <div class="v-header">
-    <VCart/>
+    <VCart
+
+        :cart_data="CART"
+    />
   </div>
 </template>
 
 <script>
 import VCart from "@/components/v-cart";
+import {mapActions, mapGetters} from "vuex";
 export default {
     name: "v-header",
-    components: {VCart}
+    components: {VCart},
+    props:{},
+    data() {
+      return {};
+    },
+    computed:{
+      ...mapGetters([
+          "CART"
+      ])
+    },
+    methods:{}
 };
 </script>
 
