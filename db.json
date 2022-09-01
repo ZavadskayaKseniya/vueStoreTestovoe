@@ -1,75 +1,99 @@
 {
   "products": [
     {
-      "id": "Math.random()*100",
+      "id": "jyg5654tfu6987jo--j",
       "image": "https://st.bork.ru/components/product/kitchen/kitchen-unit/kitchen-unit.jpg?t=1649849816",
       "name": "Telefon 1",
       "price":  3434,
-      "description": "liucusgd;couSHFDZGBVEDZSGBEASR  HSRT TSUI[ sas ik",
+      "description": "Миксер универсальный для кухни.",
       "available": true
     },
     {
-      "id": "Math.random()*100",
+      "id": "jyg5646fcyt78g--",
       "image": "https://vitek.ru/netcat_files/1402/1779/2430.jpg",
       "name": "Telefon 2",
       "price":  487,
-      "description": "lGFHFHBNsdadpASUI[ sas ik",
+      "description": "Отпаривание вещей любой сложности в один миг.",
       "available": true
     },
     {
-      "id": "Math.random()*100",
+      "id": "lijp--7987btf77--",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxxA-OSukjjvuqNSa-ZgJ0DsXZWYZTt_zplA&usqp=CAU",
       "name": "Telefon 3",
       "price":  950846,
-      "description": "liucusgd;cougas  SG STRY TRTdadpASUI[ sas ik",
+      "description": "Духовой шкаф.",
       "available": true
     },
     {
-      "id": "Math.random()*100",
+      "id": "lki__byg--7686",
       "image": "https://interiorbusiness.ru/wp-content/uploads/2020/08/best-kitchen-appliance-brands-10.jpg",
       "name": "Telefon 4",
       "price":  1443300,
-      "description": "liucusgdRE SG  TTTTTTTTTTTT I[ sas ik",
+      "description": "Овощерезка в комплекте с различными насадками.",
       "available": true
     },
     {
-      "id": "Math.random()*100",
+      "id": "lonjyfgi",
       "image": "https://st49.stblizko.ru/images/icons/rubrics/menus/002/120/387_medium.jpg?1571381494",
       "name": "Telefon 5",
       "price":  23432,
-      "description": "lERT     ;couRETu sdadpASUI[ sas ik",
+      "description": "Посудомоечная машина 3 режима.",
       "available": true
     },
     {
-      "id": "Math.random()*100",
-      "image": "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
+      "id": "ikguyi00---8fdv",
+      "image": "https://hoff.ru/upload/medialibrary/7ca/7ca89be8660c8a8fc81a1573ee742e8d.jpg",
       "name": "Telefon 6",
       "price":  2343,
-      "description": "liucusgd;coRETEWERT sdadpASUI[ sas ik",
+      "description": "Универсальная мультиварка.",
       "available": true
     },
     {
-      "id": "Math.random()*100",
-      "image": "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
+      "id": "lkdmjc__08979",
+      "image": "https://images.merlion.ru/118/1181882/1181882_v01_b.jpg",
       "name": "Telefon 7",
       "price":  2343,
-      "description": "liucusgd;coRETEWERT sdadpASUI[ sas ik",
+      "description": "Утюг со стальным покрытием.",
       "available": true
     },
     {
-      "id": "Math.random()*100",
-      "image": "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
+      "id": "lionkcghiu55___)897",
+      "image": "https://www.gastronom.ru/binfiles/images/20211014/bee1e91b.jpg",
       "name": "Telefon 8",
       "price":  2343,
-      "description": "liucusgd;coRETEWERT sdadpASUI[ sas ik",
+      "description": "Тостер 5 режимов.",
       "available": true
     },
     {
-      "id": "Math.random()*100",
-      "image": "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
+      "id": "kojlkj58---000xz",
+      "image": "https://www.ferra.ru/thumb/660x0/filters:quality(75)/imgs/2018/11/24/16/2466074/9ddd9a9db616166383269092491d6812f7123cb6.jpg",
       "name": "Telefon 9",
       "price":  2343,
-      "description": "liucusgd;coRETEWERT sdadpASUI[ sas ik",
+      "description": "Приготовление вафель.",
+      "available": true
+    },
+    {
+      "id": "kojwerfw4ef4---000xz",
+      "image": "https://mcgrp.ru/img/2021_05/img_1014969.jpg",
+      "name": "Telefon 10",
+      "price":  2343,
+      "description": "Инфрокрасный шкаф.",
+      "available": true
+    },
+    {
+      "id": "kojwedqewedrq3fee00xz",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBVvxBEyjNe1Z_GUV9Lp27Jy13KJTT5lHUhA&usqp=CAU",
+      "name": "Telefon 11",
+      "price":  2343,
+      "description": "Духовой шкаф.",
+      "available": true
+    },
+    {
+      "id": "kojeewdf334ef4---000xz",
+      "image": "https://a-dom.su/upload/iblock/3f9/mikser_kitchenaid.jpg",
+      "name": "Telefon 12",
+      "price":  2343,
+      "description": "Тестомешалка универсальная.",
       "available": true
     }
   ]

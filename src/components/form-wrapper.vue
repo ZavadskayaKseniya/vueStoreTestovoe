@@ -40,7 +40,7 @@ export default {
    display: flex;
    justify-content: start;
    align-items: center;
-   margin-top:$margin;
+   margin-top:50px;
 
    background: $form-backgraund;
    box-shadow: $form-shadow;

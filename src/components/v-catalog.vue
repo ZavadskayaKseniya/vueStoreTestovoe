@@ -3,7 +3,7 @@
 <div class="v-catalog">
 
   <CardItem
-    v-for="product in this.$store.state.products"
+    v-for="product in PRODUCTS"
     :key="product.id"
     v-bind:product_data="product"
     @sendArticle="showChildIdInConsole"
@@ -23,6 +23,11 @@ export default {
     data() {
         return {};
     },
+    computed: {
+      ...mapGetters([
+          "PRODUCTS"
+      ])
+    },
 
     methods: {
         ...mapActions([
@@ -33,7 +38,14 @@ export default {
         }
     },
   mounted() {
-      this.GET_PRODUCTS_FROM_API();
+      this.GET_PRODUCTS_FROM_API()
+          .then((responce) => {
+            if(responce.data) {
+              console.log(responce.data[0].id);
+
+            }
+          })
+
   }
 
 };
@@ -47,6 +59,7 @@ export default {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom:auto;
+  margin-top: 50px;
 
 }
 
