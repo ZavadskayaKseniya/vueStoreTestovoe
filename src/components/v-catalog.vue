@@ -6,7 +6,7 @@
     v-for="product in PRODUCTS"
     :key="product.id"
     v-bind:product_data="product"
-    @sendArticle="showChildIdInConsole"
+    @addToCart="addToCart"
   />
 
 
@@ -31,20 +31,16 @@ export default {
 
     methods: {
         ...mapActions([
-            "GET_PRODUCTS_FROM_API"
+            "GET_PRODUCTS_FROM_API",
+            "ADD_TO_CART"
         ]),
-        showChildIdInConsole(data) {
-            console.log(data);
+      addToCart(data) {
+        this.ADD_TO_CART(data);
         }
     },
   mounted() {
       this.GET_PRODUCTS_FROM_API()
-          .then((responce) => {
-            if(responce.data) {
-              console.log(responce.data[0].id);
 
-            }
-          })
 
   }
 
@@ -60,7 +56,11 @@ export default {
   justify-content: space-between;
   margin-bottom:auto;
   margin-top: 50px;
+  margin-left: $margin;
 
+}
+.c-pointer {
+  cursor: pointer;
 }
 
 </style>

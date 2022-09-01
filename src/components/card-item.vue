@@ -6,7 +6,7 @@
       <p class="product-description">{{product_data.description}}</p>
       <span class="price">{{product_data.price}} руб.</span>
       <button class="btn-add"
-              @click="sendDataToP"
+              @click="addToCart"
       >+</button>
     </div>
   </div>
@@ -28,8 +28,8 @@ export default {
     },
     computed: {},
     methods:{
-        sendDataToP() {
-            this.$emit("sendArticle", this.product_data.id);
+        addToCart() {
+            this.$emit("addToCart",this.product_data);
         }
     }
 
@@ -42,7 +42,7 @@ export default {
   width: 30%;
   height: 20%;
   text-align: left;
-  margin: 0px 0px 0px $margin;
+  margin-bottom: $margin;
   background: #FFFEFB;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
   border-radius: 4px;
