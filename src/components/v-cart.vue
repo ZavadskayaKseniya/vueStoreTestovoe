@@ -19,11 +19,14 @@
     >
       <div
           class="cart-menu__item"
-          v-for="item in cart_data"
+          v-for="(item,index) in cart_data"
           :key="item.id"
       >
         <p>{{item.name}}</p>
         <span>{{item.price}} руб.</span>
+        <span
+            @click="deleteItem(index)"
+            class="delete-icon">X</span>
 
       </div>
 
@@ -58,6 +61,9 @@ export default {
     methods:{
       toggleElement() {
         this.isOpen= !this.isOpen;
+      },
+      deleteItem(index) {
+        this.cart_data.splice(index,1);
       }
     },
 
@@ -92,6 +98,9 @@ icon {
   height: 50px;
   transform: scale(2);
 
+}
+.delete-icon {
+  color: #FF0000DD;
 }
 .cart-circle {
   position: absolute;

@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
+import {indexOf} from "core-js/internals/array-includes";
 
 
 
@@ -16,10 +17,10 @@ let store = new Vuex.Store( {
         SET_TO_CART: (state, product) => {
             state.cart.push(product);
         },
-        REMOVE_FROM_CART: (state, id)=> {
-            return state.cart.filter((item) => {
-                return item.id===id;
-            });
+        REMOVE_FROM_CART: (state, index)=> {
+            // state.cart.splice(index,1);
+            state.cart=[];
+            console.log(index);
         }
 
     },
@@ -42,8 +43,8 @@ let store = new Vuex.Store( {
         ADD_TO_CART({commit}, product) {
             commit("SET_TO_CART", product);
         },
-        DELETE_FROM_CART({commit}, id) {
-            commit("REMOVE_FROM_CART",id);
+        DELETE_FROM_CART({commit}, index) {
+            commit("REMOVE_FROM_CART",index);
         }
 
     },
