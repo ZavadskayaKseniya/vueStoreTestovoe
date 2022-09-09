@@ -1,20 +1,42 @@
 <template>
-  <div class="form-wrapper" >
-    <form action="#" class="form-js" novalidate>
+  <div class="form-wrapper"  >
+    <form action="#"
+          class="form-js"
+          novalidate>
       <div class="form-group">
         <label for="product">Название товара</label>
-        <input type="text" class="input input-label" placeholder="Название продукта" id="product"/>
+        <input type="text"
+               class="input input-label"
+               placeholder="Название продукта"
+               id="product"
+               v-model="productName"
+        />
 
         <label for="description">Описание товара</label>
-        <input type="text" class="input input-description" placeholder="Описание продукта" id="description"/>
+        <input type="text"
+               class="input input-description"
+               placeholder="Описание продукта"
+               id="description"
+               v-model="productDescription"
+        />
 
         <label for="myURL">Адресс картинки</label>
-        <input type="url" class="input input-url" id="myURL" name="myURL"  placeholder="http://www.example.com">
+        <input type="url"
+               class="input input-url"
+               id="myURL" name="myURL"
+               placeholder="http://www.example.com"
+               v-model="productImage"
+        >
 
         <label for="price">Цена товара</label>
-        <input type="number" class="input input-price" id="price" value="42">
+        <input type="number"
+               class="input input-price"
+               id="price"
+               v-model="productPrice"
+
+        >
       </div>
-      <button class="btn-submit" type="submit">Submit</button>
+      <button class="btn-submit"  @click="addFromForm" type="submit">Submit</button>
 
     </form>
   </div>
@@ -22,14 +44,43 @@
 </template>
 
 <script>
+import {mapActions} from "vuex";
+
 export default {
     name: "form-wrapper",
     components:{},
     data() {
         return{
-            title: "Order form"
+          productName: "",
+          productDescription: "",
+          productImage:"",
+          productPrice: "",
+
+          task: {
+            "id": "lki__fsdsfbyg--7686",
+            "image": this.productImage,
+            "name": this.productName,
+            "price":  this.productPrice,
+            "description": this.productDescription,
+            "available": true
+          }
+
+
         };
     },
+    computed: {
+      ...mapActions([
+          "ADD_TO_PRODUCT"
+      ])
+    },
+    methods: {
+    addFromForm(task) {
+
+      this.ADD_TO_PRODUCT(task);
+
+    }
+    },
+    watch: {},
 };
 </script>
 

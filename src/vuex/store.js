@@ -16,11 +16,17 @@ let store = new Vuex.Store( {
         },
         SET_TO_CART: (state, product) => {
             state.cart.push(product);
+
         },
         REMOVE_FROM_CART: (state, index)=> {
             // state.cart.splice(index,1);
             state.cart=[];
             console.log(index);
+        },
+        SET_TO_PRODUCT: (state, product)=> {
+            state.products.push(product);
+            console.log("product after commit: ", product);
+            console.log("all products after commit: ", state.products);
         }
 
     },
@@ -42,6 +48,10 @@ let store = new Vuex.Store( {
         },
         ADD_TO_CART({commit}, product) {
             commit("SET_TO_CART", product);
+        },
+        ADD_TO_PRODUCT({commit}, product){
+            commit("SET_TO_PRODUCT", product.task);
+            console.log("product before commit: ", product.task);
         },
         DELETE_FROM_CART({commit}, index) {
             commit("REMOVE_FROM_CART",index);
