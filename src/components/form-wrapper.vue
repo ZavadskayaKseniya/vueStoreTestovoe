@@ -2,14 +2,18 @@
   <div class="form-wrapper"  >
     <form action="#"
           class="form-js"
-          novalidate>
+          novalidate
+          @submit.prevent="addFromForm"
+
+    >
       <div class="form-group">
         <label for="product">Название товара</label>
         <input type="text"
                class="input input-label"
                placeholder="Название продукта"
                id="product"
-               v-model="name"
+               v-model.trim="name"
+
         />
 
         <label for="description">Описание товара</label>
@@ -17,7 +21,8 @@
                class="input input-description"
                placeholder="Описание продукта"
                id="description"
-               v-model="description"
+               v-model.trim="description"
+
         />
 
         <label for="myURL">Адресс картинки</label>
@@ -25,18 +30,20 @@
                class="input input-url"
                id="myURL" name="myURL"
                placeholder="http://www.example.com"
-               v-model="image"
+               v-model.trim="image"
+
         >
 
         <label for="price">Цена товара</label>
         <input type="number"
                class="input input-price"
                id="price"
-               v-model="price"
+               v-model.trim="price"
+
 
         >
       </div>
-      <button class="btn-submit"  @click.prevent="addFromForm" >Submit</button>
+      <button class="btn-submit" type="submit"  >Submit</button>
 
     </form>
   </div>
@@ -45,10 +52,14 @@
 
 <script>
 import {mapActions} from "vuex";
+import useVuelidate from "@vuelidate/core"
+import {required, minLength,minValue} from "@vuelidate/validators"
+import {reactive} from "vue";
 
 export default {
     name: "form-wrapper",
     components:{},
+
     data() {
         return{
           name: "",
@@ -57,6 +68,7 @@ export default {
           price: 0,
         };
     },
+
     computed: {
       ...mapActions([
           "ADD_TO_PRODUCT"
@@ -72,12 +84,29 @@ export default {
             description: this.description,
             available: true
       }
+      console.log
       this.ADD_TO_PRODUCT(task);
 
     }
     },
     watch: {},
 };
+const formData = reactive({
+  name: "",
+  description: "",
+  image:"",
+  price: 0,
+    }
+);
+
+const rules = {
+  name: {required, minLength: minLength(6)},
+  description: {required},
+  image: {required},
+  price: {required, minValue: minValue(1)},
+};
+
+const v$ = useVuelidate(rules, formData);
 </script>
 
 <style lang="scss">
