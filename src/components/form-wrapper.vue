@@ -36,7 +36,7 @@
 
         >
       </div>
-      <button class="btn-submit"  @click="addFromForm" type="submit">Submit</button>
+      <button class="btn-submit"  @click="addFromForm" type="button">Submit</button>
 
     </form>
   </div>
@@ -54,11 +54,11 @@ export default {
           productName: "",
           productDescription: "",
           productImage:"",
-          productPrice: "",
+          productPrice: 0,
 
           task: {
             "id": "lki__fsdsfbyg--7686",
-            "image": this.productImage,
+            "image": "https://bipbap.ru/wp-content/uploads/2017/04/0_7c779_5df17311_orig.jpg",
             "name": this.productName,
             "price":  this.productPrice,
             "description": this.productDescription,
@@ -74,9 +74,9 @@ export default {
       ])
     },
     methods: {
-    addFromForm(task) {
+    addFromForm() {
 
-      this.ADD_TO_PRODUCT(task);
+      this.ADD_TO_PRODUCT();
 
     }
     },
