@@ -50,7 +50,7 @@ let store = new Vuex.Store( {
             commit("SET_TO_CART", product);
         },
         ADD_TO_PRODUCT({commit}, product){
-            commit("SET_TO_PRODUCT", product.task);
+            commit("SET_TO_PRODUCT", product);
             console.log("product before commit: ", product.task);
         },
         DELETE_FROM_CART({commit}, index) {

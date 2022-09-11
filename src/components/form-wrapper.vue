@@ -9,7 +9,7 @@
                class="input input-label"
                placeholder="Название продукта"
                id="product"
-               v-model="productName"
+               v-model="name"
         />
 
         <label for="description">Описание товара</label>
@@ -17,7 +17,7 @@
                class="input input-description"
                placeholder="Описание продукта"
                id="description"
-               v-model="productDescription"
+               v-model="description"
         />
 
         <label for="myURL">Адресс картинки</label>
@@ -25,18 +25,18 @@
                class="input input-url"
                id="myURL" name="myURL"
                placeholder="http://www.example.com"
-               v-model="productImage"
+               v-model="image"
         >
 
         <label for="price">Цена товара</label>
         <input type="number"
                class="input input-price"
                id="price"
-               v-model="productPrice"
+               v-model="price"
 
         >
       </div>
-      <button class="btn-submit"  @click="addFromForm" type="button">Submit</button>
+      <button class="btn-submit"  @click.prevent="addFromForm" >Submit</button>
 
     </form>
   </div>
@@ -51,21 +51,10 @@ export default {
     components:{},
     data() {
         return{
-          productName: "",
-          productDescription: "",
-          productImage:"",
-          productPrice: 0,
-
-          task: {
-            "id": "lki__fsdsfbyg--7686",
-            "image": "https://bipbap.ru/wp-content/uploads/2017/04/0_7c779_5df17311_orig.jpg",
-            "name": this.productName,
-            "price":  this.productPrice,
-            "description": this.productDescription,
-            "available": true
-          }
-
-
+          name: "",
+          description: "",
+          image:"",
+          price: 0,
         };
     },
     computed: {
@@ -75,8 +64,15 @@ export default {
     },
     methods: {
     addFromForm() {
-
-      this.ADD_TO_PRODUCT();
+      let task = {
+            id: Math.random(),
+            image: this.image,
+            name: this.name,
+            price:  this.price,
+            description: this.description,
+            available: true
+      }
+      this.ADD_TO_PRODUCT(task);
 
     }
     },
