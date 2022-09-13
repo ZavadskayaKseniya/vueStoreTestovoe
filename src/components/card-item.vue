@@ -40,12 +40,21 @@ export default {
 
 .product-item {
   width: 30%;
-  height: 20%;
   text-align: left;
   margin-bottom: $margin;
+  margin-left: $margin;
   background: #FFFEFB;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
   border-radius: 4px;
+
+  @media(max-width: 865px){
+    width: 46%;
+  }
+
+  @media(max-width: 635px){
+    width: 86%;
+  }
+
 }
 
 .product-item img {
@@ -64,18 +73,17 @@ export default {
   font-weight: 600;
   font-size: 20px;
   color:#3F3F3F;
-  //height: 48px;
 
 }
 .product-description {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   color:#3F3F3F;
   height: 48px;
 }
 .price {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5em;
 
 }
 .btn-add {

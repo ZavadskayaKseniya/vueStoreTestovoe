@@ -70,6 +70,7 @@ export default {
     },
 
     computed: {
+      // eslint-disable-next-line
       ...mapActions([
           "ADD_TO_PRODUCT"
       ])
@@ -111,16 +112,22 @@ const v$ = useVuelidate(rules, formData);
 
 <style lang="scss">
  .form-wrapper {
-   width: 332px;
-   height: 440px;
+   width: 30%;
+   height: 27.5rem;
    display: flex;
    justify-content: start;
    align-items: center;
-   margin-top:50px;
+   margin-top: 3.125rem;
 
    background: $form-backgraund;
    box-shadow: $form-shadow;
    border-radius: 4px;
+   @media(max-width: 635px){
+     width: 40%;
+   }
+   @media(max-width: 400px){
+     width: 73%;
+   }
 
 
  }
@@ -128,11 +135,11 @@ const v$ = useVuelidate(rules, formData);
    float: left;
  }
  label {
-   font-size:0.625rem;
+   font-size:0.75em;
    display: block;
    float: left;
    margin-left: 8%;
-   margin-bottom: 0.25rem;
+   margin-bottom: 0.25em;
 
  }
  .form-js{
@@ -141,12 +148,12 @@ const v$ = useVuelidate(rules, formData);
  .input {
    width: 84%;
    height: 2.25rem;;
-   padding: 0 10px;
+   padding: 0 0.625rem;
    outline: 0;
    margin: 0px $margin $margin;
    background: $form-backgraund;
    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-   border-radius: 4px;
+   border-radius: 0.25em;
    border: solid $form-backgraund;
  }
  .input.input-description {
@@ -158,25 +165,24 @@ const v$ = useVuelidate(rules, formData);
  }
  .input::placeholder{
    color: #B4B4B4;
-   font-size: 12px;
+   font-size: 0.75em;
  }
  .input.input-description::placeholder{
 
-   margin-top: 0px;
    //position: absolute;
-   z-index: 1;
+   //z-index: 1;
    //display: block;
 
  }
  .btn-submit{
    font-family: 'Inter', sans-seriff;
    background: #EEEEEE;
-   border-radius: 10px;
+   border-radius: 0.652rem;
    width: 84%;
    height: 2.25rem;
    border: solid $form-backgraund;
    padding: 0;
-   font-size: 12px;
+   font-size:0.75em;
    font-weight: 600;
    color: #B4B4B4;
 

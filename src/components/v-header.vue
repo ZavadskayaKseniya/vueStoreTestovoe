@@ -18,6 +18,7 @@ export default {
       return {};
     },
     computed:{
+      // eslint-disable-next-line
       ...mapGetters([
           "CART"
       ])

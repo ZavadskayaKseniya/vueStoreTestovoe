@@ -54,6 +54,7 @@ export default {
         };
     },
     computed:{
+      // eslint-disable-next-line
       ...mapActions([
           "DELETE_FROM_CART"
       ])
@@ -77,12 +78,12 @@ position: relative;
 }
 .cart-menu {
   position: absolute;
-  top: 30px;
+  top: 1.8rem;
   background-color: #000000A3;
   width: 400px;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   z-index: 2;
-  border-radius: 15px;
+  border-radius: 1rem;
   color: white;
 
   &__item {
@@ -104,18 +105,18 @@ icon {
 }
 .cart-circle {
   position: absolute;
-  width: 17px;
-  height: 17px;
+  width: 1.1rem;
+  height: 1.1rem;
   background-color: #FF0000DD;
   color:white;
-  border-radius: 15px;
-  font-size:13px;
+  border-radius: 1rem;
+  font-size:0.8em;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2;
-  right: -20px;
-  top: -8px;
+  right: -1.25rem;
+  top: -0.5rem;
 
 }
 </style>

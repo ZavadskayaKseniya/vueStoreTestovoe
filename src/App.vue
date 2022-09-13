@@ -27,4 +27,5 @@ export default {
   background:#E5E5E5;
 
 }
+html { font-size: 1.25vw; }
 </style>

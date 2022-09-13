@@ -24,6 +24,7 @@ export default {
         return {};
     },
     computed: {
+      // eslint-disable-next-line
       ...mapGetters([
           "PRODUCTS"
       ])
@@ -50,13 +51,16 @@ export default {
 <style lang="scss">
 .v-catalog {
 
-  width: 1028px;
+  width: 70%;
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-bottom:auto;
-  margin-top: 50px;
-  margin-left: $margin;
+  margin-top: 3.125rem;
+  //margin-left: $margin;
+
+  @media(max-width: 635px){
+    width: 60%;
+  }
 
 }
 .c-pointer {

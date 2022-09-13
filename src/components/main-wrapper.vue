@@ -37,9 +37,10 @@ export default {
 <style lang="scss">
  .main-wrapper {
 
-   max-width: 1201px;
+   max-width: 90%;
    min-height: 1000px;
    margin: 0 auto;
+
 
  }
  .main-content {
@@ -47,6 +48,10 @@ export default {
    justify-content: space-between;
    max-width: 1201px;
    min-height: 1000px;
+   @media(max-width: 400px){
+     display: inline-block;
+     margin: 0 auto;
+   }
 
  }
 
